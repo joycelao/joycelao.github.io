@@ -1,0 +1,93 @@
+body {
+	background-color: rgb(115,5,32);
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	/*fixed means when you scroll down, image will be the same */
+
+	font-family: helvetica, arial, sans-serif;
+}
+
+.main {
+	max-width: 600px;
+	background: rgba(255,255,255,0.60); 
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 40px;
+	box-shadow: 0 0 10px 10px black;
+
+
+}
+
+h1{
+	font-family: 'Slabo 27px', serif;
+	font-style: italic;
+	text-align: center;
+	letter-spacing: 5px;
+	font-size: 50px;
+	text-shadow: 0 0 5px aqua;
+
+
+}
+h2{
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+h3{
+	border-top: 1px solid orange;
+	padding-top: 1em
+	margin-top: 0;
+}
+
+h3:hover{
+	cursor:pointer;
+	text-decoration: underline;
+}
+
+h3:after{
+		float:right;
+		content:'↓';
+}
+
+/*css is very sensitive to spaces*/
+h3.open:after{
+	content:'↑';
+}
+
+
+img{
+	display: block;
+	margin: 0 auto;
+}
+	.banana {
+		border-radius: 30%;
+		border: 10px dashed black;
+		transition: transform 1s;
+	}
+
+img:hover {
+	transform: rotateZ(1800deg) scale(1.5);
+}
+	p,
+	ul,
+	ol {
+		line-height: 1.6;
+		list-style: none;
+		padding-left: 0;
+	}
+
+	a{
+		color: aqua;
+		text-decoration: none;
+		font-weight: bold;
+
+	}
+	a:hover {
+		text-decoration: underline;
+		color: #ffaabb;
+	}
+
